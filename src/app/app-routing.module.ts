@@ -8,6 +8,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.component';
 import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
+import { UserEditComponent } from './edit/user-edit/user-edit.component';
 
 const routes: Routes = [
 
@@ -23,7 +24,9 @@ const routes: Routes = [
   {path: 'tema-delete/:id', component: TemaDeleteComponent},
 
   {path: 'postagem-edit/:id', component: PostagemEditComponent },
-  {path: 'postagem-delete/:id', component: PostagemDeleteComponent}
+  {path: 'postagem-delete/:id', component: PostagemDeleteComponent},
+
+  {path: 'user-edit/:id', component: UserEditComponent}
 
 ];
 
