@@ -6,6 +6,8 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { EntrarComponent } from './entrar/entrar.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.component';
+import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
 
 const routes: Routes = [
 
@@ -18,7 +20,10 @@ const routes: Routes = [
   {path: 'tema', component: TemaComponent},
 
   {path: 'tema-edit/:id', component: TemaEditComponent},
-  {path: 'tema-delete/:id', component: TemaDeleteComponent}
+  {path: 'tema-delete/:id', component: TemaDeleteComponent},
+
+  {path: 'postagem-edit/:id', component: PostagemEditComponent },
+  {path: 'postagem-delete/:id', component: PostagemDeleteComponent}
 
 ];
 
